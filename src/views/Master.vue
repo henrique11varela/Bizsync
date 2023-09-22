@@ -1,7 +1,9 @@
 <template>
-    <div>
+    <div class="master">
         <HeaderComponent />
-        <router-view></router-view>
+        <div class="view">
+            <router-view></router-view>
+        </div>
         <FooterComponent />
     </div>
 </template>
@@ -13,4 +15,11 @@ import FooterComponent from "../components/master/FooterComponent.vue";
 export default { components: { HeaderComponent, FooterComponent } };
 </script>
 
-<style scoped></style>
+<style scoped>
+.master {
+    min-height: 100dvh;
+}
+.view {
+    width: 100vw;
+}
+</style>
