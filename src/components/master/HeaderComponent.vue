@@ -26,6 +26,7 @@ export default {};
     justify-content: space-between;
     border-bottom: solid 1px gray;
     width: 80%;
+    margin-bottom: 1rem;
 }
 
 .links {

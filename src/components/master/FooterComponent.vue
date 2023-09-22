@@ -15,14 +15,13 @@ export default {};
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
 }
 .content {
     display: flex;
     justify-content: space-between;
     border-top: solid 1px gray;
     width: 80%;
+    margin-top: 1rem;
     padding: 2rem 0;
 }
 
