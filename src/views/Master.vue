@@ -1,7 +1,7 @@
 <template>
     <div>
         <HeaderComponent />
-
+        <router-view></router-view>
         <FooterComponent />
     </div>
 </template>
@@ -9,9 +9,8 @@
 <script>
 import HeaderComponent from "../components/master/HeaderComponent.vue";
 import FooterComponent from "../components/master/FooterComponent.vue";
-export default {
-    components: { Header, Footer },
-};
+
+export default { components: { HeaderComponent, FooterComponent } };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
