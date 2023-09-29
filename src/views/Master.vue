@@ -17,13 +17,9 @@ export default { components: { HeaderComponent, FooterComponent } };
 
 <style scoped>
 .master {
-    width: 100%;
     min-height: 100dvh;
 }
 .view {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
 }
 </style>
