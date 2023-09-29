@@ -25,7 +25,8 @@ export default {
 
 <style scoped>
 .service {
-    width: 100%;
+    padding: 1em;
+    width: calc(100% - 2em);
     display: flex;
     border: 1px solid black;
 }
