@@ -1,5 +1,11 @@
 <template>
     <div class="content">
+        <div class="banner">
+            <img src="https://picsum.photos/2000/300" alt="Banner" />
+        </div>
+
+
+
         <div class="values">
             <div class="valueTitle">
                 <h3>OS NOSSOS VALORES</h3>
@@ -9,12 +15,15 @@
             </div>
         </div>
 
-        <div class="programs">
-            <h5>Programas</h5>
-            <div class="programGrid">
-                <div v-for="program in programs" :key="item.id">
-                    {{ item }}
-                </div>
+        <div class="partners">
+            <div class="partTitle">
+                <h3>Parceiros</h3>
+            </div>
+            <div class="partImgs">
+                <img src="../assets/partners/bike.jpg" alt="bike">
+                <img src="../assets/partners/elvis.jpg" alt="">
+                <img src="../assets/partners/mcdiabetes.jpg" alt="">
+                <img src="../assets/partners/suckers.jpg" alt="">
             </div>
         </div>
     </div>
@@ -22,11 +31,15 @@
 
 <script>
     export default {
-        
+
     }
 </script>
 
 <style scoped>
+h3{
+    color: #008ecc;
+}
+
 .content{
     width: 100%;
     display: flex;
@@ -39,8 +52,33 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    height: 7rem;
     border-bottom: solid 1px black;
     padding: 2rem 0;
 }
 
+.partners{
+    display: flex;
+    margin: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 17rem;
+}
+
+.partTitle{
+    padding: 2rem;
+}
+
+.partImgs{
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.partImgs img{
+    width: 270px;
+    height: 180px;
+}
 </style>

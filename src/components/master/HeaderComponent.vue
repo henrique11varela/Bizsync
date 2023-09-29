@@ -17,6 +17,7 @@ export default {};
 
 <style scoped>
 .base {
+    height: 7rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -24,6 +25,7 @@ export default {};
 .content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: solid 1px gray;
     width: 80%;
 }
