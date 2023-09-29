@@ -1,7 +1,7 @@
 <template>
     <div class="service">
         <div class="text">
-            <h1>{{ item.title }}</h1>
+            <h2>{{ item.title }}</h2>
             <p>{{ item.description }}</p>
             <a href="#">Saiba mais...</a>
         </div>
@@ -16,9 +16,6 @@ export default {
     },
     data(){
         return {}
-    },
-    mounted() {
-        console.log(this.item);
     }
 };
 </script>

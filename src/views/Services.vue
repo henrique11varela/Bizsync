@@ -16,6 +16,7 @@ import image2 from "../assets/services/2/1.png"
 import image3 from "../assets/services/3/1.png"
 import image4 from "../assets/services/4/1.png"
 import image5 from "../assets/services/5/1.png"
+import image6 from "../assets/services/6/1.png"
 import Service from "../components/services/Service.vue";
 export default {
     data() {
@@ -43,8 +44,13 @@ export default {
                 },
                 {
                     title: "DELÍCIAS CASEIRAS",
-                    description: "desc test 4",
+                    description: "desc test 5",
                     image: image5,
+                },
+                {
+                    title: "Automobile",
+                    description: "desc test 6",
+                    image: image6,
                 },
             ],
         };
