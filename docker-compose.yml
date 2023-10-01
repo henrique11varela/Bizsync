@@ -1,0 +1,9 @@
+version: "3"
+services:
+  node-app:
+    build: .
+    tty: true ##no exit docker
+    ports:
+      - "3000:8000"
+    volumes:
+      - ./:/app
