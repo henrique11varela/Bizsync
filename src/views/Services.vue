@@ -17,6 +17,7 @@ import image3 from "../assets/services/3/1.png"
 import image4 from "../assets/services/4/1.png"
 import image5 from "../assets/services/5/1.png"
 import image6 from "../assets/services/6/1.png"
+import image7 from "../assets/services/7/1.png"
 import Service from "../components/services/Service.vue";
 export default {
     data() {
@@ -52,6 +53,11 @@ export default {
                     description: "desc test 6",
                     image: image6,
                 },
+                {
+                    title: "Aeromils Airlines",
+                    description: "desc test 7",
+                    image: image7,
+                },
             ],
         };
     },
@@ -67,7 +73,6 @@ export default {
     align-items: center;
 }
 .services-grid {
-    margin-top: 2rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
