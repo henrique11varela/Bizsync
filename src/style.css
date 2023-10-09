@@ -73,7 +73,12 @@ button:focus-visible {
   margin: 0;
   text-align: center;
 }
-
+.container {
+  width: 80%;
+}
+img {
+  width: 100%;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <banner text="Contact" />
         <div class="contact-body">
             <div class="contact">
