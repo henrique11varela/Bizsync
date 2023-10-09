@@ -15,8 +15,7 @@ export default {};
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
+    margin-top: 1rem;
 }
 .content {
     display: flex;

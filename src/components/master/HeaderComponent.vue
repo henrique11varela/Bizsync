@@ -21,6 +21,7 @@ export default {};
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 .content {
     display: flex;
