@@ -1,7 +1,7 @@
 <template>
     <div>
         <a :href="item.link">
-            <img :src="item.image">
+            <i :class="item.icon"></i>
         </a>
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
     props: {
         item: {
             link: String,
-            image: String
+            icon: String
         }
     },
     data(){

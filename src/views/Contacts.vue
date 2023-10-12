@@ -21,11 +21,6 @@
 import contact from "../components/contact/contact.vue";
 import socialMedia from "../components/contact/socialMedia.vue";
 import map from "../components/contact/map.vue";
-import image1 from "../assets/services/1/1.jpg"
-import image2 from "../assets/services/2/1.png"
-import instagram from "../assets/icons/socialMedia/instagram.png"
-import youtube from "../assets/icons/socialMedia/youtube.png"
-
 import banner from "../components/global/banner.vue"
 
 export default {
@@ -35,18 +30,14 @@ export default {
                 contactList: [
                     {
                         description: "Av. Mouzinho Albuquerque, 15 4480-151 Azurara – Vila do Conde",
-                        image: "",
+                        icon: "fa-solid fa-location-dot",
                     },
                 ],
                 socialMediaList: [
 
                     {
                         link: "recrutamento@microregio.pt",
-                        image: instagram,
-                    },
-                    {
-                        link: "recrutamento@microregio.pt",
-                        image: youtube,
+                        icon: "fa-brands fa-instagram",
                     },
                 ],
                 map: {
@@ -73,9 +64,9 @@ h2 {
     grid-area: "map";
 }
 
-.contact {
+.contact>* {
     grid-area: "contact";
-
+    padding: 0.5rem 0;
 }
 
 .socialMedia {
@@ -91,9 +82,23 @@ h2 {
 .contact-body {
     display: grid;
     grid-template-areas:
+        "contact"
+        "socialMedia"
+        "map"        
+    ;
+    grid-gap: 50px;
+}
+@media (min-width: 768px) {
+    .contact-body {
+    display: grid;
+    grid-template-areas:
         "contact socialMedia"
         "map map"
     ;
-    grid-gap: 50px;
+    grid-gap: 2rem;
+}
+}
+img {
+    height: 50px;
 }
 </style>

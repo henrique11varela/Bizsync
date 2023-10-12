@@ -21,6 +21,5 @@ export default {
     padding: 30px;
     color: white;
     font-size: 40px;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
 }
 </style>

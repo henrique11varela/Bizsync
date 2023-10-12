@@ -1,6 +1,6 @@
 <template>
     <div>
-            <img class="img" :src="item.image" :alt="item.title" />
+        <i :class="item.icon"></i>
             <span>{{ item.description }}</span>
     </div>
 </template>
@@ -16,4 +16,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+div{
+    text-align: left;
+}
+</style>
