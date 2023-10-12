@@ -1,16 +1,14 @@
 <template>
-    <div class="base">
+    <div class="container">
+        <banner text="Services" />
         <div class="services-grid">
-            <Service
-                v-for="(item, index) in serviceList"
-                :item="item"
-                :key="index"
-            />
+            <Service v-for="(item, index) in serviceList" :item="item" :key="index" />
         </div>
     </div>
 </template>
 
 <script>
+import banner from "../components/global/banner.vue"
 import image1 from "../assets/services/1/1.jpg"
 import image2 from "../assets/services/2/1.png"
 import image3 from "../assets/services/3/1.png"
@@ -61,7 +59,10 @@ export default {
             ],
         };
     },
-    components: { Service },
+    components: {
+        Service,
+        banner,
+    },
 };
 </script>
 
@@ -72,6 +73,7 @@ export default {
     flex-direction: column;
     align-items: center;
 }
+
 .services-grid {
     width: 100%;
     display: grid;

@@ -21,5 +21,8 @@ export default {
     padding: 30px;
     color: white;
     font-size: 40px;
+    margin: 1rem 0;
+    width: (100% - 30px);
+    position: relative;
 }
 </style>

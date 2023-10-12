@@ -11,7 +11,7 @@
                 <socialMedia v-for="(item, index) in data.socialMediaList" :item="item" :key="index" />
             </div>
             <div class="map">
-                <map :map="data.map" />
+                <iframeMap :map="data.map" />
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
 <script>
 import contact from "../components/contact/contact.vue";
 import socialMedia from "../components/contact/socialMedia.vue";
-import map from "../components/contact/map.vue";
+import iframeMap from "../components/contact/map.vue";
 import banner from "../components/global/banner.vue"
 
 export default {
@@ -50,29 +50,31 @@ export default {
         socialMedia,
         contact,
         banner,
-        map
+        iframeMap
     },
 }
 </script>
 
 <style scoped>
 h2 {
+    color: #00c5e9;
     text-align: left;
 }
 
 .map {
-    grid-area: "map";
+    grid-area: map;
+    width: 100%;
 }
 
 .contact>* {
-    grid-area: "contact";
+    grid-area: contact;
     padding: 0.5rem 0;
 }
 
 .socialMedia {
     display: flex;
     flex-wrap: wrap;
-    grid-area: "socialMedia";
+    grid-area: socialMedia;
 }
 
 .socialMedia h2 {

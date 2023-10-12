@@ -19,5 +19,8 @@ export default {
 <style scoped>
 div{
     text-align: left;
+    font-size: 1.25rem;
+
+
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <iframe idth="800" height="230" :src="map.link">
+        <iframe width="100%" height="230" :src="map.link">
 
         </iframe>
     </div>
@@ -9,7 +9,9 @@
 <script>
 export default {
     props:{
-        map: Object
+        map: {
+            link: String
+        }
     }
 }
 </script>

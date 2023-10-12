@@ -14,14 +14,18 @@ export default {
             icon: String
         }
     },
-    data(){
+    data() {
         return {}
     }
 };
 </script>
 
 <style scoped>
-    img{
-        height: 60px
-    }
+div {
+    font-size: 1.25rem;
+}
+
+a:hover {
+    color: #00c5e9;
+}
 </style>
