@@ -120,6 +120,8 @@ hr{
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
 .partImgs img{
@@ -149,6 +151,23 @@ hr{
     justify-content: center;
     align-items: center;
     height: 20%;
+}
+
+.partImgs::-webkit-scrollbar {
+  height: 12px; 
+}
+
+.partImgs::-webkit-scrollbar-track {
+    background: #fff; 
+}
+
+.partImgs::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 6px;
+}
+
+.partImgs::-webkit-scrollbar-thumb:hover {
+    background-color: darkgray;
 }
 
 </style>
