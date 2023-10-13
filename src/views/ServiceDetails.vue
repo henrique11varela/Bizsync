@@ -17,10 +17,11 @@
             <p>{{ activeService.details.description }}</p>
 
             <img
+                class="prints"
                 v-for="item in activeService.details.images"
                 :src="item"
                 :alt="activeService.title"
-                style="margin-top: 1rem;"
+                style="margin-top: 1rem"
             />
         </div>
         <div v-else>
@@ -45,6 +46,12 @@ export default {
                 this.activeService = item;
             }
         });
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }, 200);
     },
     components: {
         banner,
@@ -81,5 +88,11 @@ export default {
 .img {
     width: 50%;
     object-fit: cover;
+}
+
+.prints {
+    object-fit: contain;
+    max-height: 80dvh;
+    width: 100%;
 }
 </style>
