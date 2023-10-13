@@ -3,7 +3,7 @@
         <div class="text">
             <h2>{{ item.title }}</h2>
             <p>{{ item.description }}</p>
-            <button @click="openDetails">Saiba mais...</button>
+            <router-link :to="`/services/${item.id}`">Saiba mais...</router-link>
         </div>
         <img class="img" :src="item.image" :alt="item.title" />
     </div>
@@ -15,11 +15,6 @@ export default {
     data(){
         return {}
     },
-    methods: {
-        openDetails(){
-            this.$emit('openDetails')
-        }
-    }
 };
 </script>
 
@@ -42,5 +37,6 @@ export default {
 }
 .img {
     width: 50%;
+    object-fit: cover;
 }
 </style>

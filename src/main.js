@@ -8,6 +8,7 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Services from "./views/Services.vue";
+import ServiceDetails from "./views/ServiceDetails.vue";
 import Contacts from "./views/Contacts.vue";
 
 const router = createRouter({
@@ -16,6 +17,7 @@ const router = createRouter({
         {path: '/', component: Home},
         {path: '/about', component: About},
         {path: '/services', component: Services},
+        {path: '/services/:id', component: ServiceDetails},
         {path: '/contacts', component: Contacts},
     ]
 })
