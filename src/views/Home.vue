@@ -18,6 +18,7 @@
                         <p>Procuramos a excelência em todas as nossas ações, desde a seleção do produto até ao atendimento ao cliente.</p>
                     </div>
                 </div>
+                <hr>
                 <div class="imgTxt">
                     <div class="transp">
                         <h3>Transparência</h3>
@@ -25,6 +26,7 @@
                     </div>
                     <img src="../assets/values/transparencia.jpg" alt="transparencia">
                 </div>
+                <hr>
                 <div class="imgTxt">
                     <img src="../assets/values/integridade.jpg" alt="integridade">
                     <div class="integr">
@@ -32,6 +34,7 @@
                         <p>Agimos com integridade em todas as nossas interações, mantendo os mais elevados padrões éticos.</p>
                     </div>
                 </div>
+                <hr>
                 <div class="imgTxt">
                     <div class="cresc">
                         <h3>Crescimento Sustentável</h3>
@@ -39,6 +42,7 @@
                     </div>
                     <img src="../assets/values/crescimento sustentável.jpg" alt="crescimentoSustentavel">
                 </div>
+                <hr>
                 <div class="imgTxt">
                     <img src="../assets/values/confianca.jpg" alt="confianca">
                     <div class="conf">
@@ -102,6 +106,9 @@ h1, h3{
     align-items: center;
     width: 80%;
     height: 17rem;
+}
+hr{
+    margin: 3rem;
 }
 
 .partTitle{
