@@ -39,6 +39,7 @@ div {
     font-size: 2rem;
     color: #008ecc;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .flex>.text-body,
