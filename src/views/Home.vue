@@ -12,7 +12,7 @@
             </div>
             <div class="valueContents">
                 <div class="imgTxt">
-                    <img src="../assets/values/excelencia.jpg" alt="excelencia">
+                    <img src="https://bizsync-image.s3.eu-west-3.amazonaws.com/assets/values/excelencia.jpg" alt="excelencia">
                     <div class="excel">
                         <h3>Excelência</h3>
                         <p>Procuramos a excelência em todas as nossas ações, desde a seleção do produto até ao atendimento ao cliente.</p>
@@ -24,11 +24,11 @@
                         <h3>Transparência</h3>
                         <p>Operamos de forma aberta e honesta, fornecendo informações claras e precisas aos nossos clientes.</p>
                     </div>
-                    <img src="../assets/values/transparencia.jpg" alt="transparencia">
+                    <img src="https://bizsync-image.s3.eu-west-3.amazonaws.com/assets/values/transparencia.jpg" alt="transparencia">
                 </div>
                 <hr>
                 <div class="imgTxt">
-                    <img src="../assets/values/integridade.jpg" alt="integridade">
+                    <img src="https://bizsync-image.s3.eu-west-3.amazonaws.com/assets/values/integridade.jpg" alt="integridade">
                     <div class="integr">
                         <h3>Integridade</h3>
                         <p>Agimos com integridade em todas as nossas interações, mantendo os mais elevados padrões éticos.</p>
@@ -40,11 +40,11 @@
                         <h3>Crescimento Sustentável</h3>
                         <p>Procuramos um crescimento sustentável que beneficie os nossos clientes, equipa e comunidade.</p>
                     </div>
-                    <img src="../assets/values/crescimento sustentável.jpg" alt="crescimentoSustentavel">
+                    <img src="https://bizsync-image.s3.eu-west-3.amazonaws.com/assets/values/crescimento sustentável.jpg" alt="crescimentoSustentavel">
                 </div>
                 <hr>
                 <div class="imgTxt">
-                    <img src="../assets/values/confianca.jpg" alt="confianca">
+                    <img src="https://bizsync-image.s3.eu-west-3.amazonaws.com/assets/values/confianca.jpg" alt="confianca">
                     <div class="conf">
                         <h3>Confiança</h3>
                         <p>Baseamos todas as nossas relações comerciais na confiança mútua, agindo com honestidade e cumprindo as nossas promessas. </p>
