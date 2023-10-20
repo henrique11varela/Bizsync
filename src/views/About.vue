@@ -15,12 +15,11 @@
                     repellat iure, voluptatem vero.
                 </div>
             </div>
-        </div>>
-
-        <imgLeft /> 
         </div>
+
+        <imgLeft :item="left" />
         <div class="background"></div>
-        <imgRight />
+        <imgRight :item="left" />
     </div>
 </template>
 
@@ -29,7 +28,17 @@ import banner from "../components/global/banner.vue"
 import imgLeft from "../components/about/imgLeft.vue"
 import imgRight from "../components/about/imgRight.vue"
 
+
 export default {
+    data() {
+        return {
+            left: {
+                title: "aaa",
+                text: "sdwsdq",
+                img: "sdsaqd"
+            }
+        }
+    },
     components: {
         banner,
         imgRight,

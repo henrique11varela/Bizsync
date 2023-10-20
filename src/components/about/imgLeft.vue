@@ -1,14 +1,16 @@
 <template>
-    <div class="img-body">
-        <img :src="img" alt="">
-    </div>
     <div class="flex">
-        <div class="text-body">
-            <h3 class="title">{{ title }}</h3>
-            <p class="text">
-                {{ text }}
+        <div class="img-body">
+            <img :src="item.img" alt="">
+        </div>
+        <div class="flex">
+            <div class="text-body">
+                <h3 class="title">{{ item.title }}</h3>
+                <p class="text">
+                    {{ item.text }}
 
-            </p>
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -25,8 +27,18 @@ export default {
 </script>
 
 <style scoped>
+div {
+    padding: 0.5rem 0rem;
+}
+
 .flex {
     display: flex;
+}
+
+.title {
+    font-size: 2rem;
+    color: #008ecc;
+    font-weight: bold;
 }
 
 .flex>.text-body,
@@ -37,5 +49,4 @@ export default {
 .text {
     font-size: 1rem;
     text-align: justify;
-}
-</style>
+}</style>

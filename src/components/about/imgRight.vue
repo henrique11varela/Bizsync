@@ -1,14 +1,14 @@
 <template>
     <div class="flex">
         <div class="text-body">
-            <h3 class="title">{{ title }}</h3>
+            <h3 class="title">{{ item.title }}</h3>
             <p class="text">
-                {{ text }}
+                {{ item.text }}
 
             </p>
         </div>
         <div class="img-body">
-            <img :src="img" alt="">
+            <img :src="item.img" alt="">
         </div>
     </div>
 </template>
@@ -29,6 +29,16 @@ export default {
     display: flex;
 }
 
+.title {
+    font-size: 2rem;
+    color: #008ecc;
+    font-weight: bold;
+}
+
+div {
+    padding: 0.5rem 0rem;
+}
+
 .flex>.text-body,
 .flex>.title-body {
     padding: 0 0.5rem;
@@ -37,5 +47,4 @@ export default {
 .text {
     font-size: 1rem;
     text-align: justify;
-}
-</style>
+}</style>
