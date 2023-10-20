@@ -22,7 +22,7 @@ export default {
 a {
     font-size: 1.25rem;
     padding: 0.8rem;
-    color: #005767;
+    color: #00c5e9;
 }
 
 a:hover {
