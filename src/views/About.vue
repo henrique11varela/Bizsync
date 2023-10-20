@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <banner text="About" />
+        <banner text="Sobre nós" />
 
 
         <div class="flex">
@@ -21,7 +21,7 @@
         </div>
 
         <imgLeft :item="left" />
-        
+        <img src="https://picsum.photos/1280/720" alt="">
     </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
             left: {
                 title: "Sobre nós",
                 text: "A Bizsync é uma empresa inovadora especializada em soluções digitais personalizadas, com uma equipa talentosa, maioritariamente jovem. Baseamos a nossa abordagem na criatividade, tecnologia avançada e um compromisso inabalável com a excelência. Na Bizsync, tornamos ideias em realidade digital. Oferecemos uma vasta gama de serviços e soluções digitais, que abrangem desde o desenvolvimento de websites e aplicações móveis até estratégias digitais personalizadas. A nossa versatilidade permite-nos satisfazer as diversas necessidades dos nossos clientes, independentemente do tamanho ou da complexidade do projeto. ",
-                img: "https://picsum.photos/1280/720"
+                img: "sdsaqd"
             }
         }
     },
