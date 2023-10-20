@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="banner">
-            <img src="https://picsum.photos/2000/300" alt="Banner" />
+            <img id="imgBanner" src="https://picsum.photos/2000/500" alt="Banner" />
         </div>
 
 
@@ -76,6 +76,11 @@
 <style scoped>
 h1, h3{
     color: #008ecc;
+}
+
+#imgBanner {
+    object-fit: cover;
+    height: 60dvh;
 }
 
 .content{

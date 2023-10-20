@@ -70,7 +70,7 @@ export default {
     height: 720px;
 }
 
-div {
+.flex {
     padding: 0.5rem 0rem;
 }
 </style>
