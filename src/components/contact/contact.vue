@@ -25,15 +25,11 @@ div {
 
 
 }
-a i {
-    color: #00c5e9 !important;
-}
 a {
-    padding: 0.8rem;
-    color: black !important;
+    color: black;
 }
 
 a:hover {
-    color: #025c6c;
+    color: #00c5e9;
 }
 </style>
