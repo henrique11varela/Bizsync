@@ -15,63 +15,31 @@
                     repellat iure, voluptatem vero.
                 </div>
             </div>
-        </div>
+        </div>>
 
-        <div class="flex">
-            <div class="img-body">
-                <img src="https://fakeimg.pl/1280x720/" alt="">
-            </div>
-            <div class="text-body">
-                <h3 class="title">title</h3>
-                <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis officiis unde eligendi iste
-                    voluptate
-                    alias numquam placeat ex accusantium laboriosam voluptates magni sequi, qui doloribus inventore
-                    suscipit
-                    officia temporibus? Nostrum.
-
-                </p>
-            </div>
+        <imgLeft /> 
         </div>
         <div class="background"></div>
-        <div class="flex">
-            <div class="text-body">
-                <h3 class="title">title</h3>
-                <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis officiis unde eligendi iste
-                    voluptate
-                    alias numquam placeat ex accusantium laboriosam voluptates magni sequi, qui doloribus inventore
-                    suscipit
-                    officia temporibus? Nostrum.
-
-                </p>
-            </div>
-            <div class="img-body">
-                <img src="https://fakeimg.pl/1280x720/" alt="">
-            </div>
-        </div>
+        <imgRight />
     </div>
 </template>
 
 <script>
 import banner from "../components/global/banner.vue"
+import imgLeft from "../components/about/imgLeft.vue"
+import imgRight from "../components/about/imgRight.vue"
+
 export default {
     components: {
-        banner
+        banner,
+        imgRight,
+        imgLeft
     },
+
 };
 </script>
 
 <style scoped>
-.flex {
-    display: flex;
-}
-
-.flex>.text-body,
-.flex>.title-body {
-    padding: 0 0.5rem;
-}
-
 .title {
     font-size: 2rem;
     color: #008ecc;
@@ -81,11 +49,6 @@ export default {
 .background {
     background-image: url('https://fakeimg.pl/1280x720/');
     height: 720px;
-}
-
-.text {
-    font-size: 1rem;
-    text-align: justify;
 }
 
 div {
