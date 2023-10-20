@@ -75,7 +75,7 @@
 
 <style scoped>
 h1, h3{
-    color: #008ecc;
+    color: #138e79;
 }
 
 #imgBanner {

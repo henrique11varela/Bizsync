@@ -37,7 +37,7 @@ div {
 
 .title {
     font-size: 2rem;
-    color: #008ecc;
+    color: #138e79;
     font-weight: bold;
     margin-bottom: 2rem;
 }

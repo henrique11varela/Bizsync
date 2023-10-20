@@ -17,7 +17,7 @@ export default {
 </script>
 <style scoped>
 .banner {
-    background-color: #008ecc;
+    background-color: #138e79;
     padding: 30px;
     color: white;
     font-size: 40px;

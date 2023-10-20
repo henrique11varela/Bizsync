@@ -26,6 +26,6 @@ export default {};
 }
 
 h4 {
-    color: #008ecc;
+    color: #138e79;
 }
 </style>

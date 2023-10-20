@@ -31,7 +31,7 @@ export default {
 
 .title {
     font-size: 2rem;
-    color: #008ecc;
+    color: #138e79;
     font-weight: bold;
 }
 

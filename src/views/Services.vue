@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <banner text="Services" />
+        <banner text="Serviços" />
         <div class="services-grid">
             <Service v-for="(item, index) in serviceList" :item="item" :key="index" />
         </div>

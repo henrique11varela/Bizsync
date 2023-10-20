@@ -1,11 +1,11 @@
 <template>
     <div class="base">
         <div class="content">
-            <router-link to="/"><h1 class="Company-Name">Bizsync</h1></router-link>
+            <router-link to="/"><h1 class="Company-Name"><img src="../../../public/logo.png">Bizsync</h1></router-link>
             <div class="links">
-                <router-link to="/about">Sobre nós</router-link>
-                <router-link to="/services">Serviços</router-link>
-                <router-link to="/contacts">Contactos</router-link>
+                <router-link class="link-text" to="/about">Sobre nós</router-link>
+                <router-link class="link-text" to="/services">Serviços</router-link>
+                <router-link class="link-text" to="/contacts">Contactos</router-link>
             </div>
         </div>
     </div>
@@ -16,6 +16,7 @@ export default {};
 </script>
 
 <style scoped>
+
 .base {
     height: 7rem;
     width: 100%;
@@ -24,7 +25,7 @@ export default {};
     margin-bottom: 1rem;
 }
 a {
-    color: #00c5e9;
+    color: #138e79;
 }
 
 a:hover,
@@ -47,8 +48,17 @@ a:hover,
 }
 
 .Company-Name {
-    color: #008ecc;
+    color: #138e79;
     font-family: papyrus;
+}
+.Company-Name>img {
+    height: .8em;
+    width: .8em;
+    margin-right: .2em;
+}
+
+.link-text {
+    font-size: 1.3em;
 }
 
 a {

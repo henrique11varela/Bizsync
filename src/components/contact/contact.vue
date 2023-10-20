@@ -30,6 +30,6 @@ a {
 }
 
 a:hover {
-    color: #00c5e9;
+    color: #138e79;
 }
 </style>
