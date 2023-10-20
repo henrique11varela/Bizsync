@@ -23,6 +23,14 @@ export default {};
     justify-content: center;
     margin-bottom: 1rem;
 }
+a {
+    color: #00c5e9;
+}
+
+a:hover,
+.router-link-active {
+    color: #033139;
+}
 .content {
     display: flex;
     justify-content: space-between;

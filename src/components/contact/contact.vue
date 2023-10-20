@@ -1,7 +1,9 @@
 <template>
     <div>
-        <i :class="item.icon"></i>
-            <span>{{ item.description }}</span>
+        <a :href="item.description">
+            <i :class="item.icon"></i>
+            {{ item.description }}
+        </a>
     </div>
 </template>
 
@@ -17,10 +19,21 @@ export default {
 </script>
 
 <style scoped>
-div{
+div {
     text-align: left;
     font-size: 1.25rem;
 
 
+}
+a i {
+    color: #00c5e9 !important;
+}
+a {
+    padding: 0.8rem;
+    color: black !important;
+}
+
+a:hover {
+    color: #025c6c;
 }
 </style>

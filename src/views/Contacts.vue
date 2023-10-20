@@ -1,17 +1,14 @@
 <template>
     <div class="container">
-        <banner text="Contact" />
+        <banner text="Contactos" />
         <div class="contact-body">
             <div class="contact">
-                <h2>Microrégio-Soluções Informáticas, Lda</h2>
+                <h2>Bizsync Soluções Informáticas, Lda</h2>
                 <contact v-for="(item, index) in data.contactList" :item="item" :key="index" />
             </div>
             <div class="socialMedia">
                 <h2>Redes Sociais</h2>
                 <socialMedia v-for="(item, index) in data.socialMediaList" :item="item" :key="index" />
-            </div>
-            <div class="map">
-                <iframeMap :map="data.map" />
             </div>
         </div>
     </div>
@@ -20,7 +17,6 @@
 <script>
 import contact from "../components/contact/contact.vue";
 import socialMedia from "../components/contact/socialMedia.vue";
-import iframeMap from "../components/contact/map.vue";
 import banner from "../components/global/banner.vue"
 
 export default {
@@ -29,20 +25,37 @@ export default {
             data: {
                 contactList: [
                     {
-                        description: "Av. Mouzinho Albuquerque, 15 4480-151 Azurara – Vila do Conde",
-                        icon: "fa-solid fa-location-dot",
+                        description: "+351 932 111 111",
+                        icon: "fa-solid fa-phone",
+                    },
+                    {
+                        description: "+351 932 111 112",
+                        icon: "fa-solid fa-phone",
+                    },
+                    {
+                        description: "geral@bizsync.pt",
+                        icon: "fa-regular fa-envelope",
                     },
                 ],
                 socialMediaList: [
 
                     {
-                        link: "recrutamento@microregio.pt",
+                        link: "https://www.instagram.com",
                         icon: "fa-brands fa-instagram",
+                    }, 
+                    {
+                        link: "https://www.facebook.com/?locale=pt_PT",
+                        icon: "fa-brands fa-facebook",
+                    }, 
+                    {
+                        link: "https://www.youtube.com/?hl=pt-PT&gl=PT",
+                        icon: "fa-brands fa-youtube",
+                    },
+                    {
+                        link: "https://twitter.com/?lang=pt",
+                        icon: "fa-brands fa-twitter",
                     },
                 ],
-                map: {
-                    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47927.50073914129!2d-8.769930533852737!3d41.342163092580805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2443f0fa46216d%3A0xd2dad6981073c3a6!2zTWljcm9yw6lnaW8tU29sdcOnw7VlcyBJbmZvcm3DoXRpY2FzIExkYQ!5e0!3m2!1spt-PT!2sus!4v1483632034476"
-                }
             }
         };
     },
@@ -50,7 +63,6 @@ export default {
         socialMedia,
         contact,
         banner,
-        iframeMap
     },
 }
 </script>
@@ -72,9 +84,8 @@ h2 {
 }
 
 .socialMedia {
-    display: flex;
-    flex-wrap: wrap;
     grid-area: socialMedia;
+    text-align: left;
 }
 
 .socialMedia h2 {
@@ -86,20 +97,22 @@ h2 {
     grid-template-areas:
         "contact"
         "socialMedia"
-        "map"        
+        "map"
     ;
     grid-gap: 50px;
 }
+
 @media (min-width: 768px) {
     .contact-body {
-    display: grid;
-    grid-template-areas:
-        "contact socialMedia"
-        "map map"
-    ;
-    grid-gap: 2rem;
+        display: grid;
+        grid-template-areas:
+            "contact socialMedia"
+            "map map"
+        ;
+        grid-gap: 2rem;
+    }
 }
-}
+
 img {
     height: 50px;
 }

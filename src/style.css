@@ -3,7 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,8 +14,6 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: white;
-  color: black;
 }
 
 

@@ -1,9 +1,7 @@
 <template>
-    <div>
         <a :href="item.link">
             <i :class="item.icon"></i>
         </a>
-    </div>
 </template>
 
 <script>
@@ -21,11 +19,14 @@ export default {
 </script>
 
 <style scoped>
-div {
+a {
     font-size: 1.25rem;
+    padding: 0.8rem;
+    color: #005767;
 }
 
 a:hover {
-    color: #00c5e9;
+    color: #033139;
 }
+
 </style>
