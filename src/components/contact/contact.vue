@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a :href="item.description">
+        <a :href="item.link">
             <i :class="item.icon"></i>
             {{ item.description }}
         </a>
