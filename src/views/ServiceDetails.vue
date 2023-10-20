@@ -1,11 +1,11 @@
 <template>
     <div class="container">
-        <div v-if="activeService">
-            <banner :text="activeService.title" />
+        <div style="display: flex;align-items: center;flex-direction: column;" v-if="activeService">
+            <banner :text="activeService.title" style="width: calc(100% - 60px);" />
 
             <div class="service">
                 <div class="text">
-                    <p>{{ activeService.description }}</p>
+                    <h1>{{ activeService.description }}</h1>
                 </div>
                 <img
                     class="img"
@@ -14,7 +14,7 @@
                 />
             </div>
 
-            <p>{{ activeService.details.description }}</p>
+            <p style="white-space: pre-wrap;" v-html="activeService.details.description"></p>
 
             <img
                 class="prints"
@@ -60,6 +60,19 @@ export default {
 </script>
 
 <style scoped>
+p {
+    text-align: start;
+    max-width: 800px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: .1em;
+}
+
 .base {
     width: 80%;
     display: flex;
