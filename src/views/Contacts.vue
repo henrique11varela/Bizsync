@@ -25,14 +25,17 @@ export default {
             data: {
                 contactList: [
                     {
+                        link: "tel:+351 932 111 111",
                         description: "+351 932 111 111",
                         icon: "fa-solid fa-phone",
                     },
                     {
+                        link: "tel:+351 932 111 112",
                         description: "+351 932 111 112",
                         icon: "fa-solid fa-phone",
                     },
                     {
+                        link: "mailto:geral@bizsync.pt",
                         description: "geral@bizsync.pt",
                         icon: "fa-regular fa-envelope",
                     },
@@ -42,11 +45,11 @@ export default {
                     {
                         link: "https://www.instagram.com",
                         icon: "fa-brands fa-instagram",
-                    }, 
+                    },
                     {
                         link: "https://www.facebook.com/?locale=pt_PT",
                         icon: "fa-brands fa-facebook",
-                    }, 
+                    },
                     {
                         link: "https://www.youtube.com/?hl=pt-PT&gl=PT",
                         icon: "fa-brands fa-youtube",
